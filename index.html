@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="home">
+    <h1>Tic Tac Toe 🎮</h1>
+    <p>Select how you want to play</p>
+
+    <button onclick="start('ai')">Play with AI 🤖</button>
+    <button onclick="start('two')">Two Player 👥</button>
+</div>
+
+<script>
+function start(mode) {
+    window.open(`game.html?mode=${mode}`, "_blank");
+}
+</script>
+
+</body>
+</html>

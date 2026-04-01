@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game">
+    <div class="top">
+        <h2 id="modeText"></h2>
+        <button onclick="toggleTheme()">🌙 / ☀️</button>
+    </div>
+
+    <div class="scoreboard">
+        <span>X: <b id="xScore">0</b></span>
+        <span>O: <b id="oScore">0</b></span>
+        <span>Draws: <b id="drawScore">0</b></span>
+    </div>
+
+    <p id="status">Player X's turn</p>
+
+    <div class="board" id="board"></div>
+
+    <button onclick="resetGame()">Restart</button>
+</div>
+
+<audio id="clickSound" src="sounds/click.mp3"></audio>
+<audio id="winSound" src="sounds/win.mp3"></audio>
+<audio id="drawSound" src="sounds/draw.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
